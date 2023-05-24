@@ -66,7 +66,7 @@ module.exports.isSectionChange = async function isSectionChange(events) {
           const currentSection = task.data.memberships[0].section.name;
           if (currentSection.includes("QA Done on UAT")) {
             const taskName = task.data.name;
-            const subject = `\nTask : ${taskName || ""}\nHas moved to  : ${currentSection || ""}`;
+            const subject = `\nTask : ${taskName || ""}\nHas moved to : ${currentSection || ""}`;
             console.log(subject);
             // alert line
             await sendLineNotify(subject);
