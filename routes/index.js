@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 const crypto = require("crypto");
-// const asana = require('asana');
 
 const { init, myworkspace, isCreateNewProject, isSectionChange } = require('../libs/asana');
 

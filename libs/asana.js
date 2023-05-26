@@ -102,7 +102,6 @@ async function settingWebhookNewProject(apiUrl, workspaceId) {
   let data = JSON.stringify({
     "data": {
       "target": `${apiUrl}/receivewebhook/newproject`,
-      "resource": "1204634251697144",
       "resource": workspaceId,
       "filters": [
         {
